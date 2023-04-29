@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 html{
+    max-height: 1330px;
 padding:1%;
 }
 .line{
@@ -17,6 +18,9 @@ border:1px solid black;
 width:80%;
 
 }
+    p{
+        font-family:helvetica;
+    }
     .highlight{
         color:#FFEF08  ;
         display: inline;
@@ -72,9 +76,9 @@ width:80%;
    	 list-style: none;
         transition: 0.3s;
     }
-    a:hover{
+   /* a:hover{
         color:yellow;
-    }
+    }*/
 
     .nav {
    	 display: inline-flex;
@@ -97,9 +101,9 @@ width:80%;
    	 list-style-type: none;
         transition: 0.2s;
     }
-    .nav li:hover{
+    /*.nav li:hover{
         color: yellow;
-    }
+    }*/
 
     .landingpage {
    	 display: flex;
@@ -150,6 +154,25 @@ width:80%;
     background-color:#FFEF08 ;
     
 }
+    .calltoaction2{
+        display:flex;
+    color:black;
+    font-family:helvetica;
+        font-size: 24px;
+    font-weight:bold;
+    justify-content:center;
+    align-items:center;
+    margin-top:20px;
+    width:300px;
+    height:100px;
+    border: 2px solid #FFEF08 ;
+    border-radius:60px;
+    transition:0.5s;
+    }
+    .calltoaction2:hover{
+    background-color:#FFEF08 ;
+    
+}
 .description{
 	display:flex;
 	justify-content:center;
@@ -174,7 +197,7 @@ width:80%;
 .pfp{
     display:flex;
     align-items:center;
-	background-color:#FFEF08 ;
+	/*background-color:#FFEF08 ;*/
 	width:400px;
 	height:500px;
 	margin-left:10%;
@@ -211,8 +234,8 @@ text-color: black;
    	 grid-template-rows: (2, 1fr);
    	 /*gap: 10px;*/
    	 /*margin-left: 1%;*/
-   	 height: 800px;
-    }
+   /*	 height: 800px;
+    }*/
 
    /* .portfolio {
    	 display: flex;
@@ -233,18 +256,22 @@ text-color: black;
 	transform:scale(1.5);
 }*/
     .flowcontainer{
-        display: flex;
+        display: ;
         justify-content: center;
         margin: 10%;
+        margin-bottom: 5%;
         margin-left: 10%;
-        width: 100%;
+        width: 80%;
         height: 700px;
-        background-color: #FFEF08 ;
+        /*background-color: #FFEF08 ;*/
         }
     .flow1{
         display:flex;
         font-family:helvetica;
-        margin-bottom: 3%;
+        justify-content:center;
+        align-content: center;
+        margin-left: 10%;
+        /*margin-bottom: 3%;*/
         width: 80%;
         height:400px;
         /*background-color: #FFEF08 ;
@@ -252,78 +279,104 @@ text-color: black;
        background-size: 50%;
         background-repeat: no-repeat;
         background-position: right;
+        }
+    .subdescribe{
+        font-weight:medium;
+        font-size: 24px;
+      width:50%;
+        margin-left: 2%;
+        height:auto;
         
     }
- 
-        
     
-    .workdescribe{
-        font-size: 40px;
-        width: 30%;
-        font-weight: bold;
-        justify-content: flex-start;
-        margin-left:2%;
+    .image{
+        display:flex;
+        justify-content: center;
+        /*margin-left:40%;*/
         
+        
+        width:400px;
+        height:400px;
+        background-color: #FFEF08;
     }
+        .workdescribe{
+        font-size: 40px;
+        width: 50%;
+        font-weight: bold;
+        margin-left:2%;
+        align-content: center;
+    } 
+   
+   
+    
+    
     .flow2{
-        margin-bottom: 3%;
-        width: 200px;
-        height:200px;
-        background-color: #FFEF08 ;
-        background-image: url('https://www.dropbox.com/s/a72viqaw57e0ctn/vend%20space-02.png?raw=1');
+        display:inline-flex;
+        /*justify-content: flex-start;*/
+        align-content: center;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        width: 80%;
+        height:300px;
+        margin-left:10%;
+    /*    background-color: #FFEF08 ;*/
+        
         
        
     }
   
-    footer {
+   /* footer {
    	 position: flex;
    	 bottom: 100%;
    	 background-color: lightblue;
    	 width: 100%;
    	 height: 200px;
-    }
+    }*/
 
     .footer {
    	 display: flex;
-   	 /*justify-content:space-between;*/
+        margin-top: 25%;
+   	 margin-left: 10%;
+        justify-content: center;
    	 align-items: center;
-   	 background-color: #FFEF08 ;
+   	 /*background-color: #FFEF08 ;*/
    	 height: 200px;
-   	 width: 90%;
-   	 padding: 5%;
+   	 width: 80%;
+   	 /*padding: 5%;*/
     }
 
     .info {
-   	 height: 80px;
+        display: flex;
+        justify-content: center;
+   	 height: 100%;
+        width:80%;
    	 color: white;
    	 font-weight: light;
 
     }
 
-    .sns {
+    /*.sns {
    	 color: white;
    	 text-decoration: none;
    	 position: absolute;
-   	 left: 90%;
-
-    }
+   	 left: 75%;
+        
+    }*/
 
     a {
    	 /*color: white;*/
    	 text-decoration: none;
     }
 
-    t {
-   	 width: 50px;
-   	 padding: 5px;
-    }
+    
 
     .contact {
    	 font-size: 14px;
-
+        color: black;
+        margin-left: 10%;
     }
 
-    .tel {
+   /* .tel {
    	 display: flex;
    	 width: 50px;
    	 height: 20px;
@@ -332,11 +385,48 @@ text-color: black;
 
     .email {
    	 font-size: 15px;
-    }
+        color:black;
+        font-weight: bold;
+        margin-left: 10%;
+    }*/
 .photo{
+    display: absolute;
 width:100%;
 height:100%;
 }
+    #img2{
+        display: flex;
+        justify-content: center;
+        background-color:  #FFEF08;
+        width: 400px;
+        height:400px;
+        margin-left:10%;
+        
+        
+    }
+    .callout{
+        /*background-color:#FFEF08; */
+        display:flex;
+        justify-content: center;
+        
+        width:60%;
+        height:250px;
+    }
+    .request{
+        display: inline-flex;
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+        width:100%;
+        color:black;
+        font-size:35px;
+    }
+    #underfoot{
+        width: 80%;
+        margin-left:10%;
+        display: flex;
+        justify-content: center;
+    }
 </style>
 
 
@@ -359,40 +449,52 @@ height:100%;
          <p class="h1">Meet Your <span class="highlight">Problem Solver </span></p>
   		 
    	 </div>
-        <div class= "calltoaction"> <a href="http://www.google.com">contact</a></div>
+        <div class= "calltoaction"> 
+            <a href="mailto:alezander.graham@gmail.com">contact</a>
+        </div>
     </div>
 <div class="line"></div>
     <div class="description">
    	 
     	<p class="intro">
-            Hi! I'm Alex and I will help you achieve <span class="highlight">your brand's goals.</span> 
+            Hi! I'm Alex and I will help you achieve <span class="highlight">your goals</span> 
     	</p>
     	<div class="pfp"></div>
     </div>
 <div class="line"></div>
-        <div class="work"><p>Works</p></div>
+       
     <div class="flowcontainer">
-        <div class="flow1"><p class="workdescribe">An advocate for social media based marketing.</p>
+        
+        <div class="flow1"><p class="workdescribe">A <span class="highlight">branding strategist</span>  helping you tell your story to the world  </p>
+            <div class="image"></div>
+            
         </div>
+        
         <div class="sns"></div>
-        <div class="flow2">
+        <div class="flow2"><p class="workdescribe"> A <span class="highlight">digital marketing professional</span> with an eye for crafting <span class="highlight">your story</span> into a product</p>
+            
+            <div id="img2"></div>
         </div>
+        
         
     </div>
   
+
+ <div class="footer">
+   	 <div class="info">
+         <div class="callout"><p class="request">You made it this far! Come on and reach out! </p></div>
+   		  </div>
+   
+    </div>
+    <div id="underfoot">
+      <div class="calltoaction2"><a href="mailto:alezander.graham@gmail.com">contact</a></div>
+     
+    
+    </div>
+    <div class="sns"> <p><a href="http://www.google.com">instagram</a></p></div>
 </body>
 <footer>
-    <div class="footer">
-   	 <div class="info">
-   		 <p class="contact">contact</p>
-   		 <p class="tel">tel: <span>718</span></p>
-         <p class="email">email: <span>alexgrahamdesign@gmail.com</span></p>
-    </div>
-    <div class="sns"> <a href="http://www.google.com">instagram</a></div>
-    
-
-
-</div>
+   
 </footer>
 
 </html>
