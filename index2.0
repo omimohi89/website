@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<title>Alex Graham</title>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Are you in the middle of exploring you visual identity for your brand or business. I got you covered">
+    <meta name="keywords" content="   Graphic design, Branding design, Brand design,Visual content creation, Logo design, Video production, Marketing, Design thinking, Storytelling,Communication, Audience, Impact">
+    <style>
+        body {
+
+            max-width: 1200px;
+            margin: auto;
+
+        }
+
+        .line {
+            display: flex;
+            margin-left: 10%;
+            margin-top: 5%;
+            margin-bottom: 2%;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            max-width: 80%;
+
+
+        }
+
+        p {
+            text-align: center;
+            font-family: helvetica;
+            font-size: 2rem;
+            font-weight: lighter;
+        }
+
+        .highlight {
+            color: #EDE01E;
+
+
+        }
+
+        .logo {
+            display: inline-flex;
+            justify-content: center;
+            /*align-items:center;*/
+            max-width: 100px;
+            height: 40px;
+            margin-right: 10%;
+            margin-left: 10%;
+        }
+
+        li {
+            list-style-type: none;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .firstlogo {
+            max-width: 100%;
+        }
+
+
+
+
+
+
+        .h1 {
+            font-family: futura;
+            font-size: 6.3rem;
+
+        }
+
+
+
+        .header {
+            max-width: 500px;
+            max-height: 200px;
+
+
+
+        }
+
+        a {
+            color: black;
+            size: 1rem;
+            list-style: none;
+            transition: 0.3s;
+        }
+
+        .nav {
+            display: inline-flex;
+            flex-direction: row;
+            max-width: 100%;
+            justify-content: ;
+            font-family: futura;
+            font-weight: regular;
+            font-size: 1rem;
+
+        }
+
+        .nav li {
+            font-weight: bold;
+
+            max-width: 2.3rem;
+            max-height: 45px;
+            margin: 15px;
+            list-style-type: none;
+            transition: 0.2s;
+        }
+
+        .nav li:hover {
+            color: #EDE01E;
+        }
+
+        .landingpage {
+            position:relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* background-color: lightblue;*/
+            margin: auto;
+
+            max-width: 100%;
+            height: 660px;
+            text-align: center;
+            background-color: #FEFFBA;
+&::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 500px; /* Adjust the width as needed */
+    height: 500px; /* Adjust the height as needed */
+    background-color: #FF0000; /* Adjust the background color as needed */
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    filter:blur(35px);
+   z-index:-1;
+  }
+ .landingpage p,
+.landingpage .h1 {
+  position: relative;
+  z-index: 1; /* Ensure the text appears above the background shape */
+  /* Other styles for the text elements */
+}
+
+
+
+
+
+
+
+        }
+
+        .h1 {
+            display: inline;
+            justify-content: center;
+            font-family: helvetica;
+            font-weight: 1000;
+            font-size: 4rem;
+
+        }
+
+        #logo p {
+            font-weight: 1000;
+        }
+
+        .landingpage .h1 {
+            display: inline;
+            justify-content: center;
+            align-items: center;
+            font-family: helvetica;
+            font-weight: 1000;
+            font-size: 3rem;
+            text-align: center;
+            max-width: 400px;
+        }
+
+        .landingpage p {
+            margin-top: 10%;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        .h2 {
+
+            font-family: arial;
+            font-size: 1.2rem;
+            font-weight: light;
+            margin-top: 10px;
+            margin-left: 12px;
+
+        }
+
+        .calltoaction {
+            display: flex;
+            color: black;
+            font-family: helvetica;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3.3rem;
+            width: 150px;
+            height: 50px;
+            border: 2px solid #EDE01E;
+            border-radius: 60px;
+            transition: 0.5s;
+        }
+
+        .calltoaction:hover {
+            background-color: #EDE01E;
+
+        }
+
+        .calltoaction2 {
+            display: flex;
+            text-align: center;
+            color: black;
+            font-family: helvetica;
+            font-size: 2.3rem;
+            font-weight: bolder;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            width: 250px;
+            height: 75px;
+            border: 2px solid #EDE01E;
+            border-radius: 60px;
+            transition: 0.5s;
+        }
+
+        .calltoaction2:hover {
+            background-color: #EDE01E;
+
+        }
+
+        .description {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 80%;
+            max-height: 450px;
+            /*background-color:lightblue;*/
+            margin-top: 5%;
+            margin-left: 10%;
+            text-align: center;
+
+        }
+
+        .description p {
+            font-weight: 1000;
+            font-size: 3rem;
+
+        }
+
+        .intro {
+            font-family: helvetica;
+            display: inline;
+            justify-content: center;
+            align-items: center;
+            max-width: 450px;
+            max-height: 450px;
+            font-size: 3.2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+       
+
+        /*  .portfoliowindow{
+margin:50px;
+paddind :center;
+height:300px;
+width:300px;
+border: 20px blue;
+text-align:center;
+text-color: black;
+} */
+
+        /*  .portfoliowindow {
+   	 text-align: center;
+   	 display: grid;
+   	 align-items: center;
+   	 justify-content: center;
+   	 grid-template-columns: repeat( 3, 2fr);
+   	 grid-template-rows: (2, 1fr);
+   	 /*gap: 10px;*/
+
+        /*margin-left: 1%;*/
+
+        /*	 height: 800px;
+    }*/
+
+        /* .portfolio {
+   	 display: flex;
+   	 background-color: lightblue;
+   	 padding: center;
+   	 width: 300px;
+   	 height: 300px;
+        margin-left:25%;
+   	 justify-content: center;
+   	 align-items: center;
+    	transition:transform 0.3s ease-in-out;
+   	 
+    }
+.portfolio:hover{
+	transform:scale(1.1);
+}
+.portfolio-expanded {
+	transform:scale(1.5);
+}*/
+
+        .flowcontainer {
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content:space-around;
+            max-width: 1440px;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+  flex-direction: column;
+        }
+.flowcontainer > div {
+            flex: 1 1 200px;
+            margin: 20px;
+        }
+
+        .flowcontainer p {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+        #lightning {
+            
+            max-width: 200px;
+            height: 200px;
+            background-image: url('https://www.dropbox.com/s/huonkdzuxcch7ok/Union.png?raw=1');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:25%;
+        }
+
+        #flow1 {
+            
+            font-family: helvetica;
+            max-width: 200px;
+            height: 400px;
+
+            /*background-color: #FFEF08 ;
+        background-image: url('https://www.dropbox.com/s/flp8j37boirdujn/Untitled.png?raw=1');*/
+            /*background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: right;*/
+        }
+
+        #flow1 p {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+
+
+        /*.image{
+        display:flex;
+        justify-content: center;
+        /*margin-left:40%;
+        
+        
+        max-width:400px;
+        max-height:400px;
+        background-color: #FFEF08;
+    }*/
+
+       
+
+
+
+        #shine {
+
+            max-width: 200px;
+            height: 200px;
+            background-image: url('https://www.dropbox.com/s/2ghrdjf0irpal9n/Group%2011.png?raw=1');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:50%;
+        }
+
+        .flow2 {
+            
+            margin: auto;
+            
+            max-width: 200px;
+            height: 400px;
+
+        }
+        
+        .flow3 p {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+        #mouse{
+              max-width: 200px;
+            height: 200px;
+            background-image: url('https://www.dropbox.com/s/43gjk82rqx6mwyn/Group%2012.png?raw=1');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:50%;
+        }
+         .flow3 {
+            
+            margin: auto;
+            
+            max-width: 200px;
+            height: 400px;
+
+        }
+
+        .flow2 p {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+        
+
+   .testimony{
+       
+       margin:auto;
+       max-width:300px;
+       max-height:350px;
+       
+       
+      position:relative;
+      margin-top:50px;
+      
+   }
+   .testimony:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FEFFBA;
+    filter: blur(20px); /* Adjust the blur amount as desired */
+    z-index: -1;
+}
+   .testimony p{
+       font-size:2rem;
+       font-weight:1000;
+       position: relative;
+        z-index: 1;
+       
+   }
+   #img1{
+       margin-top:-10%;
+       max-width:200px;
+       height:250px;
+       background-image:url('https://www.dropbox.com/s/2fuxzkv0402v67i/Group%204.png?raw=1');
+       background-repeat:no-repeat;
+       background-position:center;
+       background-size:50%;
+       
+   }
+   
+       #img2{
+           margin-top:-60%;
+           margin-left:50%;
+            max-width:200px;
+             height:250px;
+       background-image:url('https://www.dropbox.com/s/p1oap1abrqdlo45/Group%205.png?raw=1');
+       background-repeat:no-repeat;
+       background-position:center;
+       background-size:50%;
+       
+   }
+       }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="landingpage">
+
+        <div class="text">
+            <div id="logo">
+                <p>logo</p>
+            </div>
+            <p class="h1">A design agency that solves problems</p>
+            <p> Helping you create a cohesive brand</p>
+            <div id="circle"></div>
+        </div>
+
+    </div>
+    <div class="line"></div>
+    <div class="description">
+
+        <p class="intro">
+            Bespoke designs for your every situation
+        </p>
+
+    </div>
+    <div class="pfp"></div>
+    <div class="line"></div>
+<div class="container">
+    <div class="flowcontainer">
+        
+        <div id="flow1">
+            <div id="lightning"></div>
+            <p class="workdescribe">A <span class="highlight">branding strategist</span> helping you tell your story to the world </p>
+            <div class="image"></div>
+
+        </div>
+
+
+        <div class="flow2">
+            <div id="shine"></div>
+            <p> Always made with you in mind. Never from a template. </p>
+
+    
+           
+        </div>
+         <div class="flow3">
+            <div id="mouse"></div>
+            <p> Always a click away. </p>
+
+</div>
+        
+    </div>
+<div class="testimony">
+    
+    <p> Your passion and design skills have impacted me and Creative Tokyo</p>
+    <div id="img1"></div>
+    <div id="img2"></div>
+</div>
+  
+  
+</body>
+
+
+</html>
