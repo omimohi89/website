@@ -112,37 +112,45 @@
         .nav li:hover {
             color: #EDE01E;
         }
-
+.text{
+    max-width:500px;
+}
         .landingpage {
-            position:relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            /* background-color: lightblue;*/
-            margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 100%;
+  height: 660px;
+  text-align: center;
+  background-color: #FEFFBA;
+  background-image: url('second-background.jpg'); /* Replace 'second-background.jpg' with the path to your image */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1; /* Update the z-index to be above the ::before pseudo-element */
+}
 
-            max-width: 100%;
-            height: 660px;
-            text-align: center;
-            background-color: #FEFFBA;
-&::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 500px; /* Adjust the width as needed */
-    height: 500px; /* Adjust the height as needed */
-    background-color: #FF0000; /* Adjust the background color as needed */
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    filter:blur(35px);
-   z-index:-1;
-  }
- .landingpage p,
+.landingpage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 500px; /* Adjust the width as needed */
+  height: 500px; /* Adjust the height as needed */
+  background-color: #FF78D9; /* Adjust the background color as needed */
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  filter: blur(35px);
+  z-index: 2; /* Update the z-index to be above the landingpage background */
+}
+
+.landingpage p,
 .landingpage .h1 {
   position: relative;
-  z-index: 1; /* Ensure the text appears above the background shape */
+  z-index: 3; /* Ensure the text appears above the ::before pseudo-element */
   /* Other styles for the text elements */
 }
 
@@ -152,14 +160,18 @@
 
 
 
-        }
 
+        }
+.text{
+    max-width:500px;
+}
         .h1 {
             display: inline;
             justify-content: center;
             font-family: helvetica;
             font-weight: 1000;
             font-size: 4rem;
+            max-width:400px;
 
         }
 
@@ -167,7 +179,7 @@
             font-weight: 1000;
         }
 
-        .landingpage .h1 {
+        .landingpage .h1{
             display: inline;
             justify-content: center;
             align-items: center;
@@ -267,7 +279,7 @@
             text-align: center;
         }
 
-       
+
 
         /*  .portfoliowindow{
 margin:50px;
@@ -313,19 +325,21 @@ text-color: black;
 }*/
 
         .flowcontainer {
-            
+
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            justify-content:space-around;
+            justify-content: space-around;
             max-width: 1440px;
             text-align: center;
         }
-        .container{
+
+        .container {
             display: flex;
-  flex-direction: column;
+            flex-direction: column;
         }
-.flowcontainer > div {
+
+        .flowcontainer>div {
             flex: 1 1 200px;
             margin: 20px;
         }
@@ -334,18 +348,19 @@ text-color: black;
             font-weight: 600;
             font-size: 1.5rem;
         }
+
         #lightning {
-            
+
             max-width: 200px;
             height: 200px;
             background-image: url('https://www.dropbox.com/s/huonkdzuxcch7ok/Union.png?raw=1');
             background-repeat: no-repeat;
             background-position: center;
-            background-size:25%;
+            background-size: 25%;
         }
 
         #flow1 {
-            
+
             font-family: helvetica;
             max-width: 200px;
             height: 400px;
@@ -375,10 +390,6 @@ text-color: black;
         background-color: #FFEF08;
     }*/
 
-       
-
-
-
         #shine {
 
             max-width: 200px;
@@ -386,34 +397,36 @@ text-color: black;
             background-image: url('https://www.dropbox.com/s/2ghrdjf0irpal9n/Group%2011.png?raw=1');
             background-repeat: no-repeat;
             background-position: center;
-            background-size:50%;
+            background-size: 50%;
         }
 
         .flow2 {
-            
+
             margin: auto;
-            
+
             max-width: 200px;
             height: 400px;
 
         }
-        
+
         .flow3 p {
             font-weight: 600;
             font-size: 1.5rem;
         }
-        #mouse{
-              max-width: 200px;
+
+        #mouse {
+            max-width: 200px;
             height: 200px;
             background-image: url('https://www.dropbox.com/s/43gjk82rqx6mwyn/Group%2012.png?raw=1');
             background-repeat: no-repeat;
             background-position: center;
-            background-size:50%;
+            background-size: 50%;
         }
-         .flow3 {
-            
+
+        .flow3 {
+
             margin: auto;
-            
+
             max-width: 200px;
             height: 400px;
 
@@ -423,60 +436,75 @@ text-color: black;
             font-weight: 600;
             font-size: 1.5rem;
         }
-        
 
-   .testimony{
-       
-       margin:auto;
-       max-width:300px;
-       max-height:350px;
-       
-       
-      position:relative;
-      margin-top:50px;
-      
-   }
-   .testimony:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #FEFFBA;
-    filter: blur(20px); /* Adjust the blur amount as desired */
-    z-index: -1;
+
+        .testimony {
+
+            margin: auto;
+            max-width: 600px;
+            max-height: 550px;
+            margin-top:-20%;
+
+            position: relative;
+            margin-top: 50px;
+
+        }
+
+        .testimony:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #FEFFBA;
+            filter: blur(20px);
+            /* Adjust the blur amount as desired */
+            z-index: -1;
+        }
+
+        .testimony p {
+           
+            font-size: 2rem;
+            font-weight: 1000;
+            position: relative;
+            z-index: 1;
+
+        }
+#heart{
+            max-width: 200px;
+            margin-top:-20%;
+            height: 250px;
+            margin-left:50%;
+            background-image: url('https://www.dropbox.com/s/09gbdqd44t48p6n/Vector%202.png?raw=1');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
 }
-   .testimony p{
-       font-size:2rem;
-       font-weight:1000;
-       position: relative;
-        z-index: 1;
-       
-   }
-   #img1{
-       margin-top:-10%;
-       max-width:200px;
-       height:250px;
-       background-image:url('https://www.dropbox.com/s/2fuxzkv0402v67i/Group%204.png?raw=1');
-       background-repeat:no-repeat;
-       background-position:center;
-       background-size:50%;
-       
-   }
-   
-       #img2{
-           margin-top:-60%;
-           margin-left:50%;
-            max-width:200px;
-             height:250px;
-       background-image:url('https://www.dropbox.com/s/p1oap1abrqdlo45/Group%205.png?raw=1');
-       background-repeat:no-repeat;
-       background-position:center;
-       background-size:50%;
-       
-   }
-       }
+        #img1 {
+            margin-top: -10%;
+            max-width: 200px;
+            height: 250px;
+            background-image: url('https://www.dropbox.com/s/2fuxzkv0402v67i/Group%204.png?raw=1');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50%;
+
+        }
+
+        #img2 {
+            margin-top: -40%;
+            margin-left: 50%;
+            max-width: 200px;
+            height: 250px;
+            background-image: url('https://www.dropbox.com/s/p1oap1abrqdlo45/Group%205.png?raw=1');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50%;
+
+        }
+
+        }
     </style>
 
 
@@ -507,39 +535,39 @@ text-color: black;
     </div>
     <div class="pfp"></div>
     <div class="line"></div>
-<div class="container">
-    <div class="flowcontainer">
-        
-        <div id="flow1">
-            <div id="lightning"></div>
-            <p class="workdescribe">A <span class="highlight">branding strategist</span> helping you tell your story to the world </p>
-            <div class="image"></div>
+    <div class="container">
+        <div class="flowcontainer">
 
+            <div id="flow1">
+                <div id="lightning"></div>
+                <p class="workdescribe">A branding strategist helping you tell your story to the world </p>
+                <div class="image"></div>
+
+            </div>
+
+
+            <div class="flow2">
+                <div id="shine"></div>
+                <p> Always made with you in mind. Never from a template. </p>
+
+
+
+            </div>
+            <div class="flow3">
+                <div id="mouse"></div>
+                <p> Always a click away. </p>
+
+            </div>
+
+        </div>
+        <div class="testimony">
+            <div id="heart"></div>
+            <p> Your passion and design skills have impacted me and Creative Tokyo</p>
+            <div id="img1"></div>
+            <div id="img2"></div>
         </div>
 
 
-        <div class="flow2">
-            <div id="shine"></div>
-            <p> Always made with you in mind. Never from a template. </p>
-
-    
-           
-        </div>
-         <div class="flow3">
-            <div id="mouse"></div>
-            <p> Always a click away. </p>
-
-</div>
-        
-    </div>
-<div class="testimony">
-    
-    <p> Your passion and design skills have impacted me and Creative Tokyo</p>
-    <div id="img1"></div>
-    <div id="img2"></div>
-</div>
-  
-  
 </body>
 
 
