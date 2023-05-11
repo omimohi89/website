@@ -123,7 +123,7 @@
   justify-content: center;
   margin: auto;
   max-width: 100%;
-  height: 660px;
+  height: 500px;
   text-align: center;
   background-color: #FEFFBA;
   background-image: url('second-background.jpg'); /* Replace 'second-background.jpg' with the path to your image */
@@ -136,14 +136,14 @@
 .landingpage::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: -10;
   left: 100%;
-  width: 500px; /* Adjust the width as needed */
-  height: 500px; /* Adjust the height as needed */
+  width: 700px; /* Adjust the width as needed */
+  height: 700px; /* Adjust the height as needed */
   background-color: #FF78D9; /* Adjust the background color as needed */
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  filter: blur(35px);
+  filter: blur(140px);
   z-index: 2; /* Update the z-index to be above the landingpage background */
 }
 
@@ -444,7 +444,6 @@ text-color: black;
             max-width: 600px;
             max-height: 550px;
             margin-top:-20%;
-
             position: relative;
             margin-top: 50px;
 
@@ -483,7 +482,7 @@ text-color: black;
 }
         #img1 {
             margin-top: -10%;
-            max-width: 200px;
+            max-width: 150px;
             height: 250px;
             background-image: url('https://www.dropbox.com/s/2fuxzkv0402v67i/Group%204.png?raw=1');
             background-repeat: no-repeat;
@@ -495,15 +494,34 @@ text-color: black;
         #img2 {
             margin-top: -40%;
             margin-left: 50%;
-            max-width: 200px;
+            max-width: 150px;
             height: 250px;
             background-image: url('https://www.dropbox.com/s/p1oap1abrqdlo45/Group%205.png?raw=1');
             background-repeat: no-repeat;
             background-position: center;
             background-size: 50%;
-
+      
         }
 
+        .thumbsup{
+            margin-top:100px;
+            max-width:100%;
+            height:500px;
+            
+        }
+        .thumbsup p{
+            font-size:1.5rem;
+            font-weight:600;
+        }
+        .girl{
+            
+            max-width:100%;
+            height:200px;
+            background-image:url('https://www.dropbox.com/s/ewqjot0i079d93q/Group%2010.png?raw=1');
+            background-size:10rem;
+            background-repeat:no-repeat;
+            background-position:center;
+            
         }
     </style>
 
@@ -525,7 +543,7 @@ text-color: black;
         </div>
 
     </div>
-    <div class="line"></div>
+    
     <div class="description">
 
         <p class="intro">
@@ -540,7 +558,7 @@ text-color: black;
 
             <div id="flow1">
                 <div id="lightning"></div>
-                <p class="workdescribe">A branding strategist helping you tell your story to the world </p>
+                <p class="workdescribe">Quick and reliable products.</p>
                 <div class="image"></div>
 
             </div>
@@ -562,11 +580,14 @@ text-color: black;
         </div>
         <div class="testimony">
             <div id="heart"></div>
-            <p> Your passion and design skills have impacted me and Creative Tokyo</p>
+            <p> "Your passion and design skills have impacted me and Creative Tokyo"</p>
             <div id="img1"></div>
             <div id="img2"></div>
         </div>
-
+<div class="thumbsup">
+    <div class="girl"></div>
+    <p>Never worry about revisions again </p>
+</div>
 
 </body>
 
