@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Are you in the middle of exploring you visual identity for your brand or business. I got you covered">
     <meta name="keywords" content="   Graphic design, Branding design, Brand design,Visual content creation, Logo design, Video production, Marketing, Design thinking, Storytelling,Communication, Audience, Impact">
+    
+    <script> 
+    function toggleDropdown(){
+        var dropdownList = document.getElementById("dropdownList");
+        if (dropdownList.style.display==="none"){
+            dropdownList.style.display = "block";
+           } else{
+                dropdownList.style.display = "none"
+            }
+        
+    }
+    </script>
+    </head>
     <style>
         body {
 
@@ -506,7 +519,7 @@ text-color: black;
         .thumbsup{
             margin-top:100px;
             max-width:100%;
-            height:500px;
+            height:650px;
             
         }
         .thumbsup p{
@@ -523,6 +536,29 @@ text-color: black;
             background-position:center;
             
         }
+        .options{
+            
+            max-width:100%;
+            height:600px;
+            text-align:left;
+        }
+        .service{
+            font-size:2rem;
+            margin-left:5%;
+            width:80%;
+            height:75px;
+            border:none;
+            border-bottom:1px solid black;
+            border-bottom: 2 px, solid, black  ;
+            background-color:#0000;
+            font-weight: thinner;
+            text-align: left;
+            }
+            .dropcontents li{
+                text-align:left;
+                font-size:1.5rem;
+                margin:5%;
+            }
     </style>
 
 
@@ -587,8 +623,31 @@ text-color: black;
 <div class="thumbsup">
     <div class="girl"></div>
     <p>Never worry about revisions again </p>
+    <div id="heart"></div>
+    <p> We don't stop until you're happy </p>
 </div>
-
+<div class="options">
+    <button class="service" onclick="toggleDropdown()">Service</button>
+    <ul class="dropcontents" id="dropdownList">
+        <li>Logo and Branding</li>
+        <li>Social Media Content</li>
+         <li> Business Cards</li>
+        <li>Video Editing </li>
+         <li>Banners</li>
+        <li>Icons</li>
+         <li>Emails</li>
+        <li>Brochures</li>
+         <li>Packaging</li>
+        <li>Blog Graphics</li>
+         <li> Stationary</li>
+        <li>Pitch deck</li>
+        <li> Slide deck</li>
+        <li>Digital ads</li>
+        
+    </ul>
+        
+        
+    </div>
 </body>
 
 
