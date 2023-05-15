@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
-<title>Alex Graham</title>
+
 
 <head>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Are you in the middle of exploring you visual identity for your brand or business. I got you covered">
     <meta name="keywords" content="   Graphic design, Branding design, Brand design,Visual content creation, Logo design, Video production, Marketing, Design thinking, Storytelling,Communication, Audience, Impact">
     
-    <script> 
-    function toggleDropdown(){
-        var dropdownList = document.getElementById("dropdownList");
-        if (dropdownList.style.display==="none"){
-            dropdownList.style.display = "block";
-           } else{
-                dropdownList.style.display = "none"
-            }
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.service').on('click', function() {
+     $('.dropcontents').slideToggle(300);
         
-    }
-    </script>
-    </head>
+         
+    });
+  });
+</script>
+    
     <style>
         body {
-
-            max-width: 1200px;
+            max-width: 100%;
             margin: auto;
 
         }
@@ -338,7 +337,7 @@ text-color: black;
 }*/
 
         .flowcontainer {
-
+margin: auto;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -542,26 +541,172 @@ text-color: black;
             height:600px;
             text-align:left;
         }
-        .service{
-            font-size:2rem;
-            margin-left:5%;
-            width:80%;
+       .service {
+    font-size: 2rem;
+    margin-left: 5%;
+    width: 80%;
+    height: 75px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: #0000;
+    font-weight: thinner;
+    text-align: left;
+           transition: 0.3s
+  }
+
+  .dropcontents li {
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 3%;
+  }
+
+  .dropcontents {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  .active,
+  .service:hover {
+    background-color: #FEFFBA;
+  }
+        .cards{
+            
+           
+           display:flex;
+           flex-wrap:wrap;
+           justify-content:space-between;
+            max-width: 90%;
+            background-color: white;
+            margin-bottom:10%;
+            margin: auto;
+        
+        }
+        .card1,
+.card2,
+.card3 {
+  flex-basis: calc(33.33% - 20px);
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin-right: 20px; /* Add space between the cards */
+  margin-bottom:20px;
+}
+        
+        .card1{
+           flex:1;
+            max-width:400px;
+            height:500px;
+            border:2px solid black;
+            border-radius: 50px;
+            
+        }
+        .card1 p{
+            font-weight: 600;
+        }
+        .card2{
+            flex:1;
+            max-width:400px;
+            height:500px;
+            border:2px solid black;
+            border-radius: 50px;
+            
+        }
+        .card2 p{
+            font-weight: 600;
+        }.card3{
+            flex:1;
+            max-width:400px;
+            height:500px;
+            border:2px solid black;
+            border-radius: 50px;
+        }
+        
+        .card3 p{
+            font-weight: 600;
+        }
+        .list{
+            border-top:2px solid black;
+            
+        }
+        .list li{
+            text-align: center;
+            margin-right: 10%;
+        }
+        h1{
+            font-family: sans-serif;
+            font-size:4rem;
+            text-align: center;
+            font-weight: bolder;
+        }
+        .title{
+            font-size:3rem;
+            font-weight: 1000;
+            font-family: sans-serif;
+        }
+        .start{
+            margin:auto;
+            max-width:200px;
             height:75px;
-            border:none;
-            border-bottom:1px solid black;
-            border-bottom: 2 px, solid, black  ;
-            background-color:#0000;
-            font-weight: thinner;
-            text-align: left;
-            }
-            .dropcontents li{
-                text-align:left;
-                font-size:1.5rem;
-                margin:5%;
-            }
+            border:1px solid black ;
+            border-radius:15px;
+            text-align: center;
+            transition: 0.3s;
+            background:black;
+            
+        }
+        .start p{
+            font-size: 1.5rem;
+            color: white;
+        }
+      
+        .start a{
+            color:white;
+        }
+        .book{
+            text-decoration-line: underline;
+        }
+        .book p{
+            font-size: 1.2rem;
+            font-weight:600;
+            
+        }
+        .works{
+            
+            max-width:100%;
+            height:700px;
+            margin: auto;
+            background-color:  #FF78D9;
+        }
+        .pcard1{
+            margin: auto;
+            margin-top: 5%;
+            max-width:300px;
+            height:300px;
+            background-color:white; 
+            border-radius:20px;
+        }
+         .pcard2{
+            margin: auto;
+            margin-top: 5%;
+            max-width:300px;
+            height:300px;
+            background-color:white; 
+            border-radius:20px;
+        }
+         .pcard3{
+            margin: auto;
+            margin-top: 5%;
+            max-width:300px;
+            height:300px;
+            background-color:white; 
+            border-radius:20px;
+        }
     </style>
 
 
+    
 </head>
 
 <body>
@@ -595,7 +740,9 @@ text-color: black;
             <div id="flow1">
                 <div id="lightning"></div>
                 <p class="workdescribe">Quick and reliable products.</p>
-                <div class="image"></div>
+                <div class="image">
+                
+                </div>
 
             </div>
 
@@ -627,8 +774,8 @@ text-color: black;
     <p> We don't stop until you're happy </p>
 </div>
 <div class="options">
-    <button class="service" onclick="toggleDropdown()">Service</button>
-    <ul class="dropcontents" id="dropdownList">
+    <button class="service" >Service</button>
+    <ul class="dropcontents" style="display: none;">
         <li>Logo and Branding</li>
         <li>Social Media Content</li>
          <li> Business Cards</li>
@@ -646,6 +793,83 @@ text-color: black;
         
     </ul>
         
+        
+    </div>
+    </div>
+    <h1> Plans </h1>
+    <div class=" cards ">
+        
+        <div class="card1">
+        <p class="title">Monthly</p>
+            <p>$2,995/m</p>
+            <div class="list">
+            <ul>
+                <li>unlimited revisions</li>
+                <li>unlimited products</li>
+                <li>unlimited members</li>
+                
+                </ul>
+            </div>
+            <div class="start">
+                <p><a href="https://google.com">get started</a></p>
+                </div>
+            <div class="book">
+                <p><a href="https:/?google.com">book a call</a></p>
+            </div>
+            
+        </div>
+          <div class="card2">
+        <p class="title">Quaterly</p>
+            <p>$2,500/m</p>
+            <div class="list">
+            <ul>
+                <li>unlimited revisions</li>
+                <li>unlimited products</li>
+                <li>unlimited members</li>
+                
+                </ul>
+            </div>
+            <div class="start">
+                <p><a href="https://google.com">get started</a></p>
+                
+            </div>
+          <div class="book">
+                <p><a href="https:/?google.com">book a call</a></p>
+            </div>
+            
+        </div>
+      <div class="card3">
+        <p class="title">Annual</p>
+            <p>$2,000/m</p>
+            <div class="list">
+            <ul>
+                <li>unlimited revisions</li>
+                <li>unlimited products</li>
+                <li>unlimited members</li>
+                
+                </ul>
+            </div>
+            <div class="start">
+                <p><a href="https://google.com">get started</a></p>
+                
+            </div>
+          <div class="book">
+                <p><a href="https:/?google.com">book a call</a></p>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="works">
+        <div class="pcard1">
+        
+        </div>
+        <div class="pcard2">
+        
+        </div>
+        <div class="pcard3">
+        
+        </div>
         
     </div>
 </body>
