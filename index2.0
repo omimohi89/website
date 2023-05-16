@@ -654,6 +654,9 @@ margin: auto;
             text-align: center;
             transition: 0.3s;
             background:black;
+            text-decoration:none;
+            list-style-type:none;
+            font-weight:1000;
             
         }
         .start p{
@@ -703,6 +706,27 @@ margin: auto;
             height:200px;
             background-color:white; 
             border-radius:20px;
+        }
+        .bottom-card{
+            padding:10%;
+            max-width:400px;
+            height:300px;
+            text-align:center;
+            margin:auto;
+            
+        }
+        .bottom-card .h1{
+            margin-bottom:10%;
+        }
+        .monkey{
+            
+            margin:auto;
+            max-width:200px;
+            height:150px;
+            background-image:url('https://www.dropbox.com/s/g2rax48b4rzi6mg/Group%2013.png?raw=1');
+            background-size:contain;
+            background-repeat:no-repeat;
+            
         }
     </style>
 
@@ -872,6 +896,14 @@ margin: auto;
         
         </div>
         
+    </div>
+    <div class="bottom-card">
+        <div class="monkey"></div>
+        <p class="h1">Still there? What are you waiting for?</p>
+    <div class="start">
+                <p><a href="https://google.com">get started</a></p>
+                
+            </div>
     </div>
 </body>
 
