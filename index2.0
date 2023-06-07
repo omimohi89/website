@@ -9,7 +9,34 @@
     <meta name="keywords" content="   Graphic design, Branding design, Brand design,Visual content creation, Logo design, Video production, Marketing, Design thinking, Storytelling,Communication, Audience, Impact">
     
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Start of Async Drift Code -->
+<script>
+"use strict";
 
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('yxk5iyup5rhn');
+</script>
+<!-- End of Async Drift Code -->
     <script>
    
     
@@ -24,6 +51,7 @@
 
     
     <style>
+        html{scroll-behavior: smooth;}
         body {
             max-width: 100%;
             margin: auto;
@@ -56,14 +84,20 @@
 
         }
 
-        .logo {
-            display: inline-flex;
+        #logo {
+            
+            display: flex;
             justify-content: center;
             /*align-items:center;*/
             max-width: 100px;
-            height: 40px;
-            margin-right: 10%;
-            margin-left: 10%;
+            height: 100px;
+            margin: auto;
+            color: black;
+            background-size: contain;
+            background-position: center;
+            background-repeat:no-repeat;
+            background-image: url('https://www.dropbox.com/s/uwbok7p0f983u51/logo%20web.png?raw=1');
+            z-index: 3;
         }
 
         li {
@@ -142,42 +176,46 @@
   height: 700px;
   text-align: center;
   background-color: #FEFFBA;
-  background-image: url('second-background.jpg'); /* Replace 'second-background.jpg' with the path to your image */
+  background-image: url('https://www.dropbox.com/s/nh9wztkws9qluv3/Ellipse%202.png?raw=1'); /* Replace 'second-background.jpg' with the path to your image */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: 1; /* Update the z-index to be above the ::before pseudo-element */
+  z-index: 3; /* Update the z-index to be above the ::before pseudo-element */
 }
 
-.landingpage::before {
+/*.landingpage::before {
   content: '';
   position: absolute;
   top: -10;
-  left: 100%;
-  width: 700px; /* Adjust the width as needed */
-  height: 700px; /* Adjust the height as needed */
-  background-color: #FF78D9; /* Adjust the background color as needed */
+  left: 50%;
+  width: 700px; 
+  height: 700px; 
+  background-color: #FF78D9; 
   transform: translate(-50%, -50%);
   border-radius: 50%;
   filter: blur(140px);
-  z-index: 2; /* Update the z-index to be above the landingpage background */
-}
+  z-index: 1; 
+}*/
 
 .landingpage p,
 .landingpage .h1 {
+   
+   
   position: relative;
   z-index: 3; /* Ensure the text appears above the ::before pseudo-element */
   /* Other styles for the text elements */
 }
 
-
-
-
-
-
-
-
+        .landingpage .h1{
+             max-width:200px;
         }
+
+
+
+
+
+
+        
 .text{
     max-width:500px;
 }
@@ -200,10 +238,10 @@
             justify-content: center;
             align-items: center;
             font-family: helvetica;
-            font-weight: 1000;
-            font-size: 3rem;
+            font-weight: bolder;
+            font-size: 4rem;
             text-align: center;
-            max-width: 400px;
+            max-width: 200px;
         }
 
         .landingpage p {
@@ -211,7 +249,25 @@
             font-weight: 600;
             font-size: 1.5rem;
         }
-
+        .landingpage a{
+            color:white;
+            text-decoration: none;
+        }
+        .plans{
+            margin-top: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            margin: auto;
+            margin-top:10%;
+            max-width: 300px;
+            height:75px;
+            color:white;
+            background-color: black;
+            border-radius:70px;
+        }
+     
         .h2 {
 
             font-family: arial;
@@ -458,7 +514,7 @@ margin: auto;
 
             margin: auto;
             max-width: 600px;
-            max-height: 550px;
+            height: 450px;
             margin-top:-20%;
             position: relative;
             margin-top: 50px;
@@ -509,7 +565,7 @@ margin: auto;
 
         #img2 {
             margin-top: -40%;
-            margin-left: 50%;
+            margin-left: 60%;
             max-width: 150px;
             height: 250px;
             background-image: url('https://www.dropbox.com/s/p1oap1abrqdlo45/Group%205.png?raw=1');
@@ -522,7 +578,7 @@ margin: auto;
         .thumbsup{
             margin-top:100px;
             max-width:100%;
-            height:650px;
+            height:400px;
             
         }
         .thumbsup p{
@@ -542,7 +598,7 @@ margin: auto;
         .options{
             
             max-width:100%;
-            height:auto;
+            /*height:auto;*/
             text-align:left;
             cursor: pointer;
             padding: 18px;
@@ -568,7 +624,7 @@ margin: auto;
     border: none;
     border-bottom: 1px solid black;
     background-color: #0000;
-    font-weight: thinner;
+    font-weight: bolder;
     text-align: left;
            transition: 0.3s
   }
@@ -596,32 +652,32 @@ margin: auto;
   .service:hover {
     background-color: #FEFFBA;
   }
-        .cards{
+        #cards{
             
            
            display:flex;
            flex-wrap:wrap;
            justify-content:space-between;
-            max-width: 90%;
+            max-width: 80%;
             background-color: white;
             margin-bottom:10%;
             margin: auto;
-        
         }
         .card1,
 .card2,
 .card3 {
-  flex-basis: calc(33.33% - 20px);
+  flex-basis: calc(33.33% - 10px);
   height: 500px;
   border: 2px solid black;
   border-radius: 50px;
-  margin-right: 20px; /* Add space between the cards */
+  margin-right: 30px; /* Add space between the cards */
   margin-bottom:20px;
 }
         
         .card1{
            flex:1;
-            max-width:400px;
+           max-width:500px;
+            min-width: 300px;
             height:500px;
             border:2px solid black;
             border-radius: 50px;
@@ -632,7 +688,8 @@ margin: auto;
         }
         .card2{
             flex:1;
-            max-width:400px;
+            max-width:500px;
+            min-width: 300px;
             height:500px;
             border:2px solid black;
             border-radius: 50px;
@@ -642,7 +699,8 @@ margin: auto;
             font-weight: 600;
         }.card3{
             flex:1;
-            max-width:400px;
+            max-width:500px;
+            min-width: 300px;
             height:500px;
             border:2px solid black;
             border-radius: 50px;
@@ -671,6 +729,7 @@ margin: auto;
             font-family: sans-serif;
         }
         .start{
+            margin-top: 10%;
             margin:auto;
             max-width:80%;
             height:75px;
@@ -691,6 +750,11 @@ margin: auto;
       
         .start a{
             color:white;
+            text-decoration: none;
+        }
+        .bottom-card .start{
+            margin-top: 10%;
+            
         }
         .book{
             text-decoration-line: underline;
@@ -701,44 +765,96 @@ margin: auto;
             
         }
         .works{
+             padding:5%;
+           
+            margin: auto;
+              max-width:1400px;
             
-            max-width:80%;
-            padding:10%;
-            height:650px;
-            margin: auto;
-            background-color:  #FF78D9;
+             height:auto;
+            background-color: black;
+           
         }
-        .pcard1{
+        .workcards{
+             
+           
             margin: auto;
+              max-width:800%;
+            justify-content: space-between;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .pcard1,
+.pcard2,
+.pcard3 {
+  flex-basis: calc(33.33% - 20px);
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin-right: 40px; /* Add space between the cards */
+  margin-bottom:20px;
+}
+        .works .pcard1,
+.works .pcard2,
+.works .pcard3 {
+  background-repeat: no-repeat;
+}
+        .works h1{
+            color:white;
+            position:static;
+            text-align: center;
+            
+        }
+        .pcardnull{}
+        .pcard1{
+           flex:1;
+            margin:auto;
             margin-top: 5%;
-            max-width:200px;
-            height:200px;
-            background-color:white; 
+            max-width:280px;
+            min-width: 280px;
+            height:350px;
+            border:1px solid white;
+             
             border-radius:20px;
+            background-image: url('https://www.dropbox.com/s/k8hnqwf85mniu1l/I%20feel%20you.png?raw=1');
+            background-position: center;
+            background-size: contain;
         }
          .pcard2{
-            margin: auto;
+           flex:1;
+             margin:auto;
             margin-top: 5%;
-            max-width:200px;
-            height:200px;
+            max-width:280px;
+             min-width: 280px;
+            height:350px;
+             border:1px solid white;
+            
+            border-radius:20px;
+             background-image: url('https://www.dropbox.com/s/mp5tak5mpc2tg4b/Mr.Fingaz.png?raw=1');
+            background-position: center;
+            background-repeat: :no-repeat;
+            background-size: contain;
+        }
+         /*.pcard3{
+           margin:auto;
+            margin-top: 5%;
+             min-width: 280px;
+            max-width:400px;
+            height:400px;
             background-color:white; 
             border-radius:20px;
-        }
-         .pcard3{
-            margin: auto;
-            margin-top: 5%;
-            max-width:200px;
-            height:200px;
-            background-color:white; 
-            border-radius:20px;
-        }
+        }*/
+      
         .bottom-card{
+            margin-top: 10%;
             padding:10%;
             max-width:400px;
-            height:300px;
+            height:500px;
             text-align:center;
             margin:auto;
             
+        }
+        .bottom a{
+            text-decoration: none;
         }
         .bottom-card .h1{
             margin-bottom:10%;
@@ -749,8 +865,120 @@ margin: auto;
             max-width:200px;
             height:150px;
             background-image:url('https://www.dropbox.com/s/g2rax48b4rzi6mg/Group%2013.png?raw=1');
-            background-size:contain;
+            background-size:cover;
             background-repeat:no-repeat;
+            
+        }
+        .footer{
+        
+            margin:auto;
+            max-width:100%;
+            height:400px;
+            background-color: black;
+            color:white;
+            
+        }
+        .footer a{
+            justify-content: center;
+            display: flex;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .choice{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width:150px;
+            height:25px;
+            background-color:black;
+            border-radius:25px;
+            font-size:1rem;
+            margin:auto;
+            margin-top:-3%;
+            color:white;
+        }
+        .choice p{
+            color:white;
+            
+        }
+        .see-works{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            max-width:200px;
+            height:60px;
+            border-radius:60px;
+            background-color: black;
+            margin:auto;
+            
+        }
+        .see-works p, .see-works a{
+            color:white;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            
+        }
+        .policy{
+            margin-top: 10%;
+            max-width:200px;
+            height:100px;
+          
+            
+        }
+        .packagexplain{
+            margin: auto;
+            max-width:80%;
+            height:auto;
+            
+            text-align: center;
+        }
+        .packagexplain p{
+            margin:auto;
+            max-width: 400px;
+            font-weight: 400;
+            font-size:1.5rem;
+            
+        }
+        .style{
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+        }
+        .style h1{
+            font-size: 1.5rem;
+        }
+        .additionalinfo{
+            width: 100px;
+            height:100px;
+            background-image: url('https://www.dropbox.com/s/7py7hpxi2u6a4pr/Desktop%20-%201%282%29.png?raw=1');
+            background-position: center;
+            background-repeat:no-repeat;
+            background-size: contain
+        }
+        #twitter{
+            margin: auto;
+            width:30px;
+            height:30px;
+           
+        }
+        .additional{
+            max-width: 100px;
+            height: 100px;
+            
+        }
+        .additional p{
+            font-size: 1rem;
+        }
+        #testimonial{
+            margin: auto;
+            max-width:50%;
+            height:300px;
+            background-color:#FEFFBA
+        }
+        .box{
+            display: flex;
             
         }
     </style>
@@ -766,13 +994,18 @@ margin: auto;
 
         <div class="text">
             <div id="logo">
-                <p>logo</p>
+                
             </div>
             <p class="h1">A design agency that solves problems</p>
             <p> Helping you create a cohesive brand</p>
+        
             <div id="circle"></div>
+              <div class="plans">
+                  <p><a href="#cards">see plans</a></p>
         </div>
-
+        </div>
+           
+        
     </div>
     
     <div class="description">
@@ -781,6 +1014,9 @@ margin: auto;
             Bespoke designs for your every situation
         </p>
 
+    </div>
+    <div class="see-works">
+        <p><a href="https://www.figma.com/proto/qaVNiztTpWEWoHL1MUmR5H/Untitled?type=design&node-id=51-6&scaling=min-zoom&page-id=0%3A1"> see works</a> </p>
     </div>
     <div class="pfp"></div>
     <div class="line"></div>
@@ -820,11 +1056,21 @@ margin: auto;
 <div class="thumbsup">
     <div class="girl"></div>
     <p>Never worry about revisions again </p>
-    <div id="heart"></div>
+    
     <p> We don't stop until you're happy </p>
 </div>
+<div class="packagexplain">
+        <h1>The Future Is Now</h1>
+    <p>Stop searching on freelance websites and coming across unsavory designers, with one flat fee get what your looking and added perks.</p>
+    <div class="box">
+    <div id=testimonial><h1>Nice logo, bro!You've always done great work!</h1></div>
+        <div class="style"><h1>Don't like meetings?</h1><p>Us too. We want to get straight to it. </p></div>
+        <div class="style"><h1>How's progress?</h1><p>We use Trello to let you know what's happening. You can add as many projects to the queue as you want. View active, queued, and completed. </p></div>
+    <div class="style"><h1>The more the merrier</h1><p>Invite your entire team, so anyone can submit request. </p></div>
+        </div>
+        </div>
 <div class="options">
-    <button class="service" >Service</button>
+    <button class="service" >Services</button>
     <ul class="dropcontents">
         <li>Logo and Branding</li>
         <li>Social Media Content</li>
@@ -845,11 +1091,12 @@ margin: auto;
         
         
     </div>
-    </div>
+   
     <h1> Plans </h1>
-    <div class=" cards ">
+    <div id="cards">
         
         <div class="card1">
+            <p class="choice">best choice</p>
         <p class="title">Monthly</p>
             <p>$2,995/m</p>
             <div class="list">
@@ -864,7 +1111,7 @@ margin: auto;
                 <p><a href="https://google.com">get started</a></p>
                 </div>
             <div class="book">
-                <p><a href="https:/?google.com">book a call</a></p>
+                <p><a href="https://calendly.com/d/2h3-76d-v2f/intro-call">book a call</a></p>
             </div>
             
         </div>
@@ -884,7 +1131,7 @@ margin: auto;
                 
             </div>
           <div class="book">
-                <p><a href="https:/?google.com">book a call</a></p>
+                <p><a href="https://calendly.com/d/2h3-76d-v2f/intro-call">book a call</a></p>
             </div>
             
         </div>
@@ -904,22 +1151,19 @@ margin: auto;
                 
             </div>
           <div class="book">
-                <p><a href="https:/?google.com">book a call</a></p>
+                <p><a href="https://calendly.com/d/2h3-76d-v2f/intro-call">book a call</a></p>
             </div>
             
         </div>
     </div>
     
     <div class="works">
-        <div class="pcard1">
+        <h1>Latest Works</h1>
+        <div class="workcards"></div>
+        <div class="pcardnull"></div>
+        <div class="pcard1"></div>
+        <div class="pcard2"></div>
         
-        </div>
-        <div class="pcard2">
-        
-        </div>
-        <div class="pcard3">
-        
-        </div>
         
     </div>
     <div class="FAQ">
@@ -938,12 +1182,27 @@ margin: auto;
 
     <div class="bottom-card">
         <div class="monkey"></div>
-        <p class="h1">Still there? What are you waiting for?</p>
+        <p class="h1">All your answers in one neat package </p>
     <div class="start">
-                <p><a href="https://google.com">get started</a></p>
+                <p><a href="#cards">see plans</a></p>
                 
             </div>
     </div>
+    </div>
+    <div class="footer">
+        <div class="additionalinfo">
+        </div>
+        <div class=additional><p>Saitama, Japan</p>
+            <div id="twitter"><a href="https://twitter.com/agrahamofdesign"><img src="https://www.dropbox.com/s/hqgzg3fewwwj9y2/twitter-48.png?raw=1" style="width: 24px; height: 24px;"></a></div>
+                <div class="policy">
+                    <p><a href="alexgrahamdesign@gmail.com">contat</a></p>
+<p><a href="https://www.notion.so/Privacy-Policy-76bcb35275754246bee00c9ae1f162ec?pvs=4">Privacy Policy</a></p>
+        <p><a href="https://www.notion.so/Terms-Conditions-b038e4a4c22148b08f36eaa713986917?pvs=4">Terms and conditons</a></p>
+</div>
+        </div>
+
+        </div>
+    
 </body>
 
 
