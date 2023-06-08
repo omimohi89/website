@@ -3,55 +3,58 @@
 
 
 <head>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Are you in the middle of exploring you visual identity for your brand or business. I got you covered">
     <meta name="keywords" content="   Graphic design, Branding design, Brand design,Visual content creation, Logo design, Video production, Marketing, Design thinking, Storytelling,Communication, Audience, Impact">
-    
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Start of Async Drift Code -->
-<script>
-"use strict";
 
-!function() {
-  var t = window.driftt = window.drift = window.driftt || [];
-  if (!t.init) {
-    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-    t.factory = function(e) {
-      return function() {
-        var n = Array.prototype.slice.call(arguments);
-        return n.unshift(e), t.push(n), t;
-      };
-    }, t.methods.forEach(function(e) {
-      t[e] = t.factory(e);
-    }), t.load = function(t) {
-      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-      var i = document.getElementsByTagName("script")[0];
-      i.parentNode.insertBefore(o, i);
-    };
-  }
-}();
-drift.SNIPPET_VERSION = '0.3.1';
-drift.load('yxk5iyup5rhn');
-</script>
-<!-- End of Async Drift Code -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Start of Async Drift Code -->
     <script>
-   
-    
-  $(document).ready(function() {
-  $('.service').on('click', function() {
-    $('.dropcontents').slideToggle(300, function() {
-      $(this).toggleClass('expanded'); // Toggle 'expanded' class after slideToggle
-    });
-  });
-});
-</script>
+        "use strict";
 
-    
+        ! function() {
+            var t = window.driftt = window.drift = window.driftt || [];
+            if (!t.init) {
+                if (t.invoked) return void(window.console && console.error && console.error("Drift snippet included twice."));
+                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                    t.factory = function(e) {
+                        return function() {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }, t.methods.forEach(function(e) {
+                        t[e] = t.factory(e);
+                    }), t.load = function(t) {
+                        var e = 3e5,
+                            n = Math.ceil(new Date() / e) * e,
+                            o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    };
+            }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('yxk5iyup5rhn');
+    </script>
+    <!-- End of Async Drift Code -->
+    <script>
+        $(document).ready(function() {
+            $('.service').on('click', function() {
+                $('.dropcontents').slideToggle(300, function() {
+                    $(this).toggleClass('expanded'); // Toggle 'expanded' class after slideToggle
+                });
+            });
+        });
+    </script>
+
+
     <style>
-        html{scroll-behavior: smooth;}
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             max-width: 100%;
             margin: auto;
@@ -85,7 +88,7 @@ drift.load('yxk5iyup5rhn');
         }
 
         #logo {
-            
+
             display: flex;
             justify-content: center;
             /*align-items:center;*/
@@ -95,7 +98,7 @@ drift.load('yxk5iyup5rhn');
             color: black;
             background-size: contain;
             background-position: center;
-            background-repeat:no-repeat;
+            background-repeat: no-repeat;
             background-image: url('https://www.dropbox.com/s/uwbok7p0f983u51/logo%20web.png?raw=1');
             z-index: 3;
         }
@@ -162,28 +165,32 @@ drift.load('yxk5iyup5rhn');
         .nav li:hover {
             color: #EDE01E;
         }
-.text{
-    max-width:500px;
-}
-        .landingpage {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  max-width: 100%;
-  height: 700px;
-  text-align: center;
-  background-color: #FEFFBA;
-  background-image: url('https://www.dropbox.com/s/nh9wztkws9qluv3/Ellipse%202.png?raw=1'); /* Replace 'second-background.jpg' with the path to your image */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: 3; /* Update the z-index to be above the ::before pseudo-element */
-}
 
-/*.landingpage::before {
+        .text {
+            max-width: 500px;
+        }
+
+        .landingpage {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            max-width: 100%;
+            height: 700px;
+            text-align: center;
+            background-color: #FEFFBA;
+            background-image: url('https://www.dropbox.com/s/nh9wztkws9qluv3/Ellipse%202.png?raw=1');
+            /* Replace 'second-background.jpg' with the path to your image */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            z-index: 3;
+            /* Update the z-index to be above the ::before pseudo-element */
+        }
+
+        /*.landingpage::before {
   content: '';
   position: absolute;
   top: -10;
@@ -197,17 +204,18 @@ drift.load('yxk5iyup5rhn');
   z-index: 1; 
 }*/
 
-.landingpage p,
-.landingpage .h1 {
-   
-   
-  position: relative;
-  z-index: 3; /* Ensure the text appears above the ::before pseudo-element */
-  /* Other styles for the text elements */
-}
+        .landingpage p,
+        .landingpage .h1 {
 
-        .landingpage .h1{
-             max-width:200px;
+
+            position: relative;
+            z-index: 3;
+            /* Ensure the text appears above the ::before pseudo-element */
+            /* Other styles for the text elements */
+        }
+
+        .landingpage .h1 {
+            max-width: 200px;
         }
 
 
@@ -215,17 +223,18 @@ drift.load('yxk5iyup5rhn');
 
 
 
-        
-.text{
-    max-width:500px;
-}
+
+        .text {
+            max-width: 500px;
+        }
+
         .h1 {
             display: inline;
             justify-content: center;
             font-family: helvetica;
             font-weight: 1000;
             font-size: 4rem;
-            max-width:400px;
+            max-width: 400px;
 
         }
 
@@ -233,7 +242,7 @@ drift.load('yxk5iyup5rhn');
             font-weight: 1000;
         }
 
-        .landingpage .h1{
+        .landingpage .h1 {
             display: inline;
             justify-content: center;
             align-items: center;
@@ -249,25 +258,27 @@ drift.load('yxk5iyup5rhn');
             font-weight: 600;
             font-size: 1.5rem;
         }
-        .landingpage a{
-            color:white;
+
+        .landingpage a {
+            color: white;
             text-decoration: none;
         }
-        .plans{
+
+        .plans {
             margin-top: 10%;
             display: flex;
             justify-content: center;
             align-items: center;
-            
+
             margin: auto;
-            margin-top:10%;
+            margin-top: 10%;
             max-width: 300px;
-            height:75px;
-            color:white;
+            height: 75px;
+            color: white;
             background-color: black;
-            border-radius:70px;
+            border-radius: 70px;
         }
-     
+
         .h2 {
 
             font-family: arial;
@@ -397,7 +408,7 @@ text-color: black;
 }*/
 
         .flowcontainer {
-margin: auto;
+            margin: auto;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -515,7 +526,7 @@ margin: auto;
             margin: auto;
             max-width: 600px;
             height: 450px;
-            margin-top:-20%;
+            margin-top: -20%;
             position: relative;
             margin-top: 50px;
 
@@ -535,23 +546,25 @@ margin: auto;
         }
 
         .testimony p {
-           max-width: 500px;
+            max-width: 500px;
             font-size: 2rem;
             font-weight: 1000;
-            
+
             z-index: 1;
 
         }
-#heart{
+
+        #heart {
             max-width: 200px;
-            margin-top:-20%;
+            margin-top: -20%;
             height: 250px;
-            margin-left:50%;
+            margin-left: 50%;
             background-image: url('https://www.dropbox.com/s/09gbdqd44t48p6n/Vector%202.png?raw=1');
             background-repeat: no-repeat;
             background-position: center;
             background-size: 100%;
-}
+        }
+
         #img1 {
             margin-top: -10%;
             max-width: 150px;
@@ -572,269 +585,305 @@ margin: auto;
             background-repeat: no-repeat;
             background-position: center;
             background-size: 50%;
-      
+
         }
 
-        .thumbsup{
-            margin-top:100px;
-            max-width:100%;
-            height:400px;
-            
+        .thumbsup {
+            margin-top: 100px;
+            max-width: 100%;
+            height: 400px;
+
         }
-        .thumbsup p{
-            font-size:1.5rem;
-            font-weight:600;
+
+        .thumbsup p {
+            font-size: 1.5rem;
+            font-weight: 600;
         }
-        .girl{
-            
-            max-width:100%;
-            height:200px;
-            background-image:url('https://www.dropbox.com/s/ewqjot0i079d93q/Group%2010.png?raw=1');
-            background-size:10rem;
-            background-repeat:no-repeat;
-            background-position:center;
-            
+
+        .girl {
+
+            max-width: 100%;
+            height: 200px;
+            background-image: url('https://www.dropbox.com/s/ewqjot0i079d93q/Group%2010.png?raw=1');
+            background-size: 10rem;
+            background-repeat: no-repeat;
+            background-position: center;
+
         }
-        .options{
-            
-            max-width:100%;
+
+        .options {
+
+            max-width: 100%;
             /*height:auto;*/
-            text-align:left;
+            text-align: left;
             cursor: pointer;
             padding: 18px;
             outline: none;
             transition: background-color 0.3s;
         }
-        .option:hover{
+
+        .option:hover {
             background-color: yellow;
         }
-        .option:after{
+
+        .option:after {
             content: '\02795';
             float: right;
             margin-left: 5%;
         }
-        .option.active:after{
+
+        .option.active:after {
             content: "2796";
         }
-       .service {
-    font-size: 2rem;
-    margin-left: 5%;
-    width: 80%;
-    height: 75px;
-    border: none;
-    border-bottom: 1px solid black;
-    background-color: #0000;
-    font-weight: bolder;
-    text-align: left;
-           transition: 0.3s
-  }
 
-  .dropcontents li {
-    text-align: left;
-    font-size: 1.5rem;
-    margin: 3%;
-     
-  }
-        .dropcontents.expanded{
-            height:auto;
+        .service {
+            font-size: 2rem;
+            margin-left: 5%;
+            width: 80%;
+            height: 75px;
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: #0000;
+            font-weight: bolder;
+            text-align: left;
+            transition: 0.3s
         }
 
-  .dropcontents {
-     padding: 0 18px;
-  display: none;
-  overflow: hidden;
- 
-  transition: height 0.3s ease;
-    background-color: #f1f1f1;
-  }
+        .dropcontents li {
+            text-align: left;
+            font-size: 1.5rem;
+            margin: 3%;
 
-  .active,
-  .service:hover {
-    background-color: #FEFFBA;
-  }
-        #cards{
-            
-           
-           display:flex;
-           flex-wrap:wrap;
-           justify-content:space-between;
-            max-width: 80%;
+        }
+
+        .dropcontents.expanded {
+            height: auto;
+        }
+
+        .dropcontents {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+
+            transition: height 0.3s ease;
+            background-color: #f1f1f1;
+        }
+
+        .active,
+        .service:hover {
+            background-color: #FEFFBA;
+        }
+
+        #cards {
+
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 70%;
             background-color: white;
-            margin-bottom:10%;
+            margin-bottom: 10%;
             margin: auto;
         }
+
         .card1,
-.card2,
-.card3 {
-  flex-basis: calc(33.33% - 10px);
-  height: 500px;
-  border: 2px solid black;
-  border-radius: 50px;
-  margin-right: 30px; /* Add space between the cards */
-  margin-bottom:20px;
-}
-        
-        .card1{
-           flex:1;
-           max-width:500px;
-            min-width: 300px;
-            height:500px;
-            border:2px solid black;
-            border-radius: 50px;
+        .card2,
+        .card3 {
             
+            flex-basis: calc(33.33% - 10px);
+            height: 500px;
+            border: 2px solid black;
+            border-radius: 50px;
+            margin-right: 30px;
+            /* Add space between the cards */
+            margin-bottom: 20px;
         }
-        .card1 p{
+
+        .card1 {
+            flex: 1;
+            max-width: 500px;
+            min-width: 300px;
+            height: 500px;
+            border: 2px solid black;
+            border-radius: 50px;
+
+        }
+
+        .card1 p {
             font-weight: 600;
         }
-        .card2{
-            flex:1;
-            max-width:500px;
+
+        .card2 {
+            flex: 1;
+            max-width: 500px;
             min-width: 300px;
-            height:500px;
-            border:2px solid black;
+            height: 500px;
+            border: 2px solid black;
             border-radius: 50px;
-            
+
         }
-        .card2 p{
-            font-weight: 600;
-        }.card3{
-            flex:1;
-            max-width:500px;
-            min-width: 300px;
-            height:500px;
-            border:2px solid black;
-            border-radius: 50px;
-        }
-        
-        .card3 p{
+
+        .card2 p {
             font-weight: 600;
         }
-        .list{
-            border-top:2px solid black;
-            
+
+        .card3 {
+            flex: 1;
+            max-width: 500px;
+            min-width: 300px;
+            height: 500px;
+            border: 2px solid black;
+            border-radius: 50px;
         }
-        .list li{
+
+        .card3 p {
+            font-weight: 600;
+        }
+
+        .list {
+            border-top: 2px solid black;
+
+        }
+
+        .list li {
             text-align: center;
             margin-right: 10%;
         }
-        h1{
+
+        h1 {
             font-family: sans-serif;
-            font-size:4rem;
+            font-size: 4rem;
             text-align: center;
             font-weight: bolder;
         }
-        .title{
-            font-size:3rem;
+
+        .title {
+            font-size: 3rem;
             font-weight: 1000;
             font-family: sans-serif;
         }
-        .start{
+
+        .start {
             margin-top: 10%;
-            margin:auto;
-            max-width:80%;
-            height:75px;
-            border:1px solid black ;
-            border-radius:15px;
+            margin: auto;
+            max-width: 80%;
+            height: 75px;
+            border: 1px solid black;
+            border-radius: 15px;
             text-align: center;
             transition: 0.3s;
-            background:black;
-            text-decoration:none;
-            list-style-type:none;
-            font-weight:1000;
-            
+            background: black;
+            text-decoration: none;
+            list-style-type: none;
+            font-weight: 1000;
+
         }
-        .start p{
+
+        .start p {
             font-size: 1.5rem;
             color: white;
         }
-      
-        .start a{
-            color:white;
+
+        .start a {
+            color: white;
             text-decoration: none;
         }
-        .bottom-card .start{
+
+        .bottom-card .start {
             margin-top: 10%;
-            
+
         }
-        .book{
+
+        .book {
             text-decoration-line: underline;
         }
-        .book p{
+
+        .book p {
             font-size: 1.2rem;
-            font-weight:600;
-            
+            font-weight: 600;
+
         }
-        .works{
-             padding:5%;
-           
+
+        .works {
+      
+
             margin: auto;
-              max-width:1400px;
-            
-             height:auto;
+            max-width: 100%;
+
+            height: auto;
             background-color: black;
-           
+
         }
-        .workcards{
-             
-           
+
+        .workcards {
+
+
             margin: auto;
-              max-width:800%;
+            max-width: 80%;
             justify-content: space-between;
             display: flex;
             flex-wrap: wrap;
         }
+
         .pcard1,
-.pcard2,
-.pcard3 {
-  flex-basis: calc(33.33% - 20px);
-  height: 500px;
-  border: 2px solid black;
-  border-radius: 50px;
-  margin-right: 40px; /* Add space between the cards */
-  margin-bottom:20px;
-}
-        .works .pcard1,
-.works .pcard2,
-.works .pcard3 {
-  background-repeat: no-repeat;
-}
-        .works h1{
-            color:white;
-            position:static;
-            text-align: center;
-            
+        .pcard2,
+        .pcard3 {
+            flex-basis: calc(33.33% - 20px);
+            height: 500px;
+            border: 2px solid black;
+            border-radius: 50px;
+            margin-right: 40px;
+            /* Add space between the cards */
+            margin-bottom: 20px;
         }
-        .pcardnull{}
-        .pcard1{
-           flex:1;
-            margin:auto;
+
+        .works .pcard1,
+        .works .pcard2,
+        .works .pcard3 {
+            background-repeat: no-repeat;
+        }
+
+        .works h1 {
+            color: white;
+            position: static;
+            text-align: center;
+
+        }
+
+        .pcardnull {}
+
+        .pcard1 {
+            flex: 1;
+            margin: auto;
             margin-top: 5%;
-            max-width:280px;
+            max-width: 280px;
             min-width: 280px;
-            height:350px;
-            border:1px solid white;
-             
-            border-radius:20px;
+            height: 350px;
+            border: 1px solid white;
+
+            border-radius: 20px;
             background-image: url('https://www.dropbox.com/s/k8hnqwf85mniu1l/I%20feel%20you.png?raw=1');
             background-position: center;
             background-size: contain;
         }
-         .pcard2{
-           flex:1;
-             margin:auto;
+
+        .pcard2 {
+            flex: 1;
+            margin: auto;
             margin-top: 5%;
-            max-width:280px;
-             min-width: 280px;
-            height:350px;
-             border:1px solid white;
-            
-            border-radius:20px;
-             background-image: url('https://www.dropbox.com/s/mp5tak5mpc2tg4b/Mr.Fingaz.png?raw=1');
+            max-width: 280px;
+            min-width: 280px;
+            height: 350px;
+            border: 1px solid white;
+
+            border-radius: 20px;
+            background-image: url('https://www.dropbox.com/s/mp5tak5mpc2tg4b/Mr.Fingaz.png?raw=1');
             background-position: center;
             background-repeat: :no-repeat;
             background-size: contain;
         }
-         /*.pcard3{
+
+        /*.pcard3{
            margin:auto;
             margin-top: 5%;
              min-width: 280px;
@@ -843,148 +892,194 @@ margin: auto;
             background-color:white; 
             border-radius:20px;
         }*/
-      
-        .bottom-card{
+
+        .bottom-card {
             margin-top: 10%;
-            padding:10%;
-            max-width:400px;
-            height:500px;
-            text-align:center;
-            margin:auto;
-            
+            padding: 10%;
+            max-width: 400px;
+            height: 500px;
+            text-align: center;
+            margin: auto;
+
         }
-        .bottom a{
+
+        .bottom a {
             text-decoration: none;
         }
-        .bottom-card .h1{
-            margin-bottom:10%;
+
+        .bottom-card .h1 {
+            margin-bottom: 10%;
         }
-        .monkey{
-            
-            margin:auto;
-            max-width:200px;
-            height:150px;
-            background-image:url('https://www.dropbox.com/s/g2rax48b4rzi6mg/Group%2013.png?raw=1');
-            background-size:cover;
-            background-repeat:no-repeat;
-            
+
+        .monkey {
+
+            margin: auto;
+            max-width: 200px;
+            height: 150px;
+            background-image: url('https://www.dropbox.com/s/g2rax48b4rzi6mg/Group%2013.png?raw=1');
+            background-size: cover;
+            background-repeat: no-repeat;
+
         }
-        .footer{
-        
-            margin:auto;
-            max-width:100%;
-            height:400px;
+
+        .footer {
+
+            margin: auto;
+            max-width: 100%;
+            height: 400px;
             background-color: black;
-            color:white;
-            
+            color: white;
+
         }
-        .footer a{
+
+        .footer a {
             justify-content: center;
             display: flex;
             color: white;
             text-decoration: none;
             font-size: 1rem;
         }
-        .choice{
+
+        .choice {
             display: flex;
             justify-content: center;
             align-items: center;
-            max-width:150px;
-            height:25px;
-            background-color:black;
-            border-radius:25px;
-            font-size:1rem;
-            margin:auto;
-            margin-top:-3%;
-            color:white;
+            max-width: 150px;
+            height: 25px;
+            background-color: black;
+            border-radius: 25px;
+            font-size: 1rem;
+            margin: auto;
+            margin-top: -3%;
+            color: white;
         }
-        .choice p{
-            color:white;
-            
+
+        .choice p {
+            color: white;
+
         }
-        .see-works{
-            display:flex;
+
+        .see-works {
+            display: flex;
             justify-content: center;
             align-items: center;
-            max-width:200px;
-            height:60px;
-            border-radius:60px;
+            max-width: 200px;
+            height: 60px;
+            border-radius: 60px;
             background-color: black;
-            margin:auto;
-            
+            margin: auto;
+
         }
-        .see-works p, .see-works a{
-            color:white;
+
+        .see-works p,
+        .see-works a {
+            color: white;
             text-align: center;
             font-weight: bold;
             text-decoration: none;
-            
+
         }
-        .policy{
+
+        .policy {
             margin-top: 10%;
-            max-width:200px;
-            height:100px;
-          
-            
+            max-width: 200px;
+            height: 100px;
+
+
         }
-        .packagexplain{
+
+        .packagexplain {
             margin: auto;
-            max-width:80%;
-            height:auto;
-            
-            text-align: center;
+            max-width: 100%;
+            height: auto;
+
+
         }
-        .packagexplain p{
-            margin:auto;
+
+        .packagexplain p {
+            margin: auto;
             max-width: 400px;
             font-weight: 400;
-            font-size:1.5rem;
-            
+            font-size: 1.5rem;
+
+
         }
-        .style{
+
+        .style {
+            
             display: flex;
             flex-direction: column;
-            max-width: 100%;
-        }
-        .style h1{
-            font-size: 1.5rem;
-        }
-        .additionalinfo{
-            width: 100px;
-            height:100px;
-            background-image: url('https://www.dropbox.com/s/7py7hpxi2u6a4pr/Desktop%20-%201%282%29.png?raw=1');
-            background-position: center;
-            background-repeat:no-repeat;
-            background-size: contain
-        }
-        #twitter{
-            margin: auto;
-            width:30px;
-            height:30px;
+            max-width: 700px;
+            text-align: left;
            
         }
-        .additional{
+
+        .style h1 {
+            font-size: 1.5rem;
+            text-align: left;
+            margin-left:10%;
+            margin-top:10%;
+            
+        }
+
+        .style p {
+            text-align: left;
+            font-size: 1rem;
+            margin-left:10%;
+            margin-top:-1%;
+            
+        }
+
+        .additionalinfo {
+            width: 100px;
+            height: 100px;
+            background-image: url('https://www.dropbox.com/s/7py7hpxi2u6a4pr/Desktop%20-%201%282%29.png?raw=1');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain
+        }
+
+        #twitter {
+            margin: auto;
+            width: 30px;
+            height: 30px;
+
+        }
+
+        .additional {
             max-width: 100px;
             height: 100px;
-            
+
         }
-        .additional p{
+
+        .additional p {
             font-size: 1rem;
         }
-        #testimonial{
+
+        #testimonial {
+           
             margin: auto;
-            max-width:50%;
-            height:300px;
-            background-color:#FEFFBA
+            max-width: 300px;
+            height: 300px;
+            background-color: white;
         }
-        .box{
-            display: flex;
+
+        #testimonial h1 {
+            font-size: 3rem;
+        }
+
+        .box {
             
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            background-color:#FEFFBA;
+
         }
     </style>
 
 
-    
+
 </head>
 
 <body>
@@ -994,20 +1089,20 @@ margin: auto;
 
         <div class="text">
             <div id="logo">
-                
+
             </div>
             <p class="h1">A design agency that solves problems</p>
             <p> Helping you create a cohesive brand</p>
-        
+
             <div id="circle"></div>
-              <div class="plans">
-                  <p><a href="#cards">see plans</a></p>
+            <div class="plans">
+                <p><a href="#cards">see plans</a></p>
+            </div>
         </div>
-        </div>
-           
-        
+
+
     </div>
-    
+
     <div class="description">
 
         <p class="intro">
@@ -1027,7 +1122,7 @@ margin: auto;
                 <div id="lightning"></div>
                 <p class="workdescribe">Quick and reliable products.</p>
                 <div class="image">
-                
+
                 </div>
 
             </div>
@@ -1053,156 +1148,172 @@ margin: auto;
             <div id="img1"></div>
             <div id="img2"></div>
         </div>
-<div class="thumbsup">
-    <div class="girl"></div>
-    <p>Never worry about revisions again </p>
-    
-    <p> We don't stop until you're happy </p>
-</div>
-<div class="packagexplain">
-        <h1>The Future Is Now</h1>
-    <p>Stop searching on freelance websites and coming across unsavory designers, with one flat fee get what your looking and added perks.</p>
-    <div class="box">
-    <div id=testimonial><h1>Nice logo, bro!You've always done great work!</h1></div>
-        <div class="style"><h1>Don't like meetings?</h1><p>Us too. We want to get straight to it. </p></div>
-        <div class="style"><h1>How's progress?</h1><p>We use Trello to let you know what's happening. You can add as many projects to the queue as you want. View active, queued, and completed. </p></div>
-    <div class="style"><h1>The more the merrier</h1><p>Invite your entire team, so anyone can submit request. </p></div>
-        </div>
-        </div>
-<div class="options">
-    <button class="service" >Services</button>
-    <ul class="dropcontents">
-        <li>Logo and Branding</li>
-        <li>Social Media Content</li>
-         <li> Business Cards</li>
-        <li>Video Editing </li>
-         <li>Banners</li>
-        <li>Icons</li>
-         <li>Emails</li>
-        <li>Brochures</li>
-         <li>Packaging</li>
-        <li>Blog Graphics</li>
-         <li> Stationary</li>
-        <li>Pitch deck</li>
-        <li> Slide deck</li>
-        <li>Digital ads</li>
-        
-    </ul>
-        
-        
-    </div>
-   
-    <h1> Plans </h1>
-    <div id="cards">
-        
-        <div class="card1">
-            <p class="choice">best choice</p>
-        <p class="title">Monthly</p>
-            <p>$2,995/m</p>
-            <div class="list">
-            <ul>
-                <li>unlimited revisions</li>
-                <li>unlimited products</li>
-                <li>unlimited members</li>
-                
-                </ul>
-            </div>
-            <div class="start">
-                <p><a href="https://google.com">get started</a></p>
-                </div>
-            <div class="book">
-                <p><a href="https://calendly.com/d/2h3-76d-v2f/intro-call">book a call</a></p>
-            </div>
-            
-        </div>
-          <div class="card2">
-        <p class="title">Quaterly</p>
-            <p>$2,500/m</p>
-            <div class="list">
-            <ul>
-                <li>unlimited revisions</li>
-                <li>unlimited products</li>
-                <li>unlimited members</li>
-                
-                </ul>
-            </div>
-            <div class="start">
-                <p><a href="https://google.com">get started</a></p>
-                
-            </div>
-          <div class="book">
-                <p><a href="https://calendly.com/d/2h3-76d-v2f/intro-call">book a call</a></p>
-            </div>
-            
-        </div>
-      <div class="card3">
-        <p class="title">Annual</p>
-            <p>$2,000/m</p>
-            <div class="list">
-            <ul>
-                <li>unlimited revisions</li>
-                <li>unlimited products</li>
-                <li>unlimited members</li>
-                
-                </ul>
-            </div>
-            <div class="start">
-                <p><a href="https://google.com">get started</a></p>
-                
-            </div>
-          <div class="book">
-                <p><a href="https://calendly.com/d/2h3-76d-v2f/intro-call">book a call</a></p>
-            </div>
-            
-        </div>
-    </div>
-    
-    <div class="works">
-        <h1>Latest Works</h1>
-        <div class="workcards"></div>
-        <div class="pcardnull"></div>
-        <div class="pcard1"></div>
-        <div class="pcard2"></div>
-        
-        
-    </div>
-    <div class="FAQ">
-        <h1>FAQ</h1>
-        <div class="services"> 
-        <button class="service">We don't have meeting calls. Why?</button>
-            <div class="dropcontents"><p> We want to save your time and provide as many services as possible.</p></div>
-        </div>
-        <button class="service">How can I get updates on my order?</button>
-            <div class="dropcontents"><p> We use Trello to streamline the process. All updates happen with in a day or two atmost.</p></div>
-        </div>
-    <button class="service">When can I get a finished product?</button>
-            <div class="dropcontents"><p> The project's scale dictates the completion date. Small projects will be finished within 2-3 business days.</p></div>
-        
-    
+        <div class="thumbsup">
+            <div class="girl"></div>
+            <p>Never worry about revisions again </p>
 
-    <div class="bottom-card">
-        <div class="monkey"></div>
-        <p class="h1">All your answers in one neat package </p>
-    <div class="start">
-                <p><a href="#cards">see plans</a></p>
-                
+            <p> We don't stop until you're happy </p>
+        </div>
+        <div class="packagexplain">
+            <h1>The Future Is Now</h1>
+            <p>Stop searching on freelance websites and coming across unsavory designers, with one flat fee get what your looking and added perks.</p>
+            <div class="box">
+                <div id=testimonial>
+                    <h1>Nice logo, bro!You've always done great work!</h1>
+                </div>
+                <div class="style">
+                    <h1>Don't like meetings?</h1>
+                    <p>Us too. We want to get straight to it. </p>
+                    <h1>How's progress?</h1>
+                    <p>We use Trello to let you know what's happening. You can add as many projects to the queue as you want. View active, queued, and completed. </p>
+                    <h1>The more the merrier</h1>
+                    <p>Invite your entire team, so anyone can submit request. </p>
+                </div>
+
+
             </div>
-    </div>
+        </div>
+        <div class="options">
+            <button class="service">Services</button>
+            <ul class="dropcontents">
+                <li>Logo and Branding</li>
+                <li>Social Media Content</li>
+                <li> Business Cards</li>
+                <li>Video Editing </li>
+                <li>Banners</li>
+                <li>Icons</li>
+                <li>Emails</li>
+                <li>Brochures</li>
+                <li>Packaging</li>
+                <li>Blog Graphics</li>
+                <li> Stationary</li>
+                <li>Pitch deck</li>
+                <li> Slide deck</li>
+                <li>Digital ads</li>
+
+            </ul>
+
+
+        </div>
+
+        <h1> Plans </h1>
+        <div id="cards">
+
+            <div class="card1">
+                <p class="choice">best choice</p>
+                <p class="title">Monthly</p>
+                <p>$2,995/m</p>
+                <div class="list">
+                    <ul>
+                        <li>unlimited revisions</li>
+                        <li>unlimited products</li>
+                        <li>unlimited members</li>
+
+                    </ul>
+                </div>
+                <div class="start">
+                    <p><a href="https://google.com">get started</a></p>
+                </div>
+                <div class="book">
+                    <p><a href="https://calendly.com/d/2h3-76d-v2f/intro-call">book a call</a></p>
+                </div>
+
+            </div>
+            <div class="card2">
+                <p class="title">Quaterly</p>
+                <p>$2,500/m</p>
+                <div class="list">
+                    <ul>
+                        <li>unlimited revisions</li>
+                        <li>unlimited products</li>
+                        <li>unlimited members</li>
+
+                    </ul>
+                </div>
+                <div class="start">
+                    <p><a href="https://google.com">get started</a></p>
+
+                </div>
+                <div class="book">
+                    <p><a href="https://calendly.com/d/2h3-76d-v2f/intro-call">book a call</a></p>
+                </div>
+
+            </div>
+            <div class="card3">
+                <p class="title">Annual</p>
+                <p>$2,000/m</p>
+                <div class="list">
+                    <ul>
+                        <li>unlimited revisions</li>
+                        <li>unlimited products</li>
+                        <li>unlimited members</li>
+
+                    </ul>
+                </div>
+                <div class="start">
+                    <p><a href="https://google.com">get started</a></p>
+
+                </div>
+                <div class="book">
+                    <p><a href="https://calendly.com/d/2h3-76d-v2f/intro-call">book a call</a></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="works">
+            <h1>Latest Works</h1>
+            <div class="workcards"></div>
+            <div class="pcardnull"></div>
+            <div class="pcard1"></div>
+            <div class="pcard2"></div>
+
+
+        </div>
+        <div class="FAQ">
+            <h1>FAQ</h1>
+            <div class="services">
+                <button class="service">We don't have meeting calls. Why?</button>
+                <div class="dropcontents">
+                    <p> We want to save your time and provide as many services as possible.</p>
+                </div>
+            </div>
+            <button class="service">How can I get updates on my order?</button>
+            <div class="dropcontents">
+                <p> We use Trello to streamline the process. All updates happen with in a day or two atmost.</p>
+            </div>
+        </div>
+        <button class="service">When can I get a finished product?</button>
+        <div class="dropcontents">
+            <p> The project's scale dictates the completion date. Small projects will be finished within 2-3 business days.</p>
+        </div>
+
+
+
+        <div class="bottom-card">
+            <div class="monkey"></div>
+            <p class="h1">All your answers in one neat package </p>
+            <div class="start">
+                <p><a href="#cards">see plans</a></p>
+
+            </div>
+        </div>
     </div>
     <div class="footer">
         <div class="additionalinfo">
         </div>
-        <div class=additional><p>Saitama, Japan</p>
+        <div class=additional>
+            <p>Saitama, Japan</p>
             <div id="twitter"><a href="https://twitter.com/agrahamofdesign"><img src="https://www.dropbox.com/s/hqgzg3fewwwj9y2/twitter-48.png?raw=1" style="width: 24px; height: 24px;"></a></div>
-                <div class="policy">
-                    <p><a href="alexgrahamdesign@gmail.com">contat</a></p>
-<p><a href="https://www.notion.so/Privacy-Policy-76bcb35275754246bee00c9ae1f162ec?pvs=4">Privacy Policy</a></p>
-        <p><a href="https://www.notion.so/Terms-Conditions-b038e4a4c22148b08f36eaa713986917?pvs=4">Terms and conditons</a></p>
-</div>
+            <div class="policy">
+                <p><a href="alexgrahamdesign@gmail.com">contat</a></p>
+                <p><a href="https://www.notion.so/Privacy-Policy-76bcb35275754246bee00c9ae1f162ec?pvs=4">Privacy Policy</a></p>
+                <p><a href="https://www.notion.so/Terms-Conditions-b038e4a4c22148b08f36eaa713986917?pvs=4">Terms and conditons</a></p>
+            </div>
         </div>
 
-        </div>
-    
+    </div>
+
 </body>
 
 
