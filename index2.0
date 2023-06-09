@@ -807,11 +807,9 @@ text-color: black;
         }
 
         .works {
-            padding:10%;
-            
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:center;
+            padding:5%;
+            margin:auto;
+      
       
         max-width:90%;
         height:auto;
@@ -820,14 +818,19 @@ text-color: black;
 
         }
         .workcards img{
-            margin-bottom:10%;
+            margin-bottom:5%;
         }
        
 .works h1
 {
     font-size:2rem;
 }
-
+.workcards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:auto;
+}
       /*  .workcards {
 
 
@@ -1005,7 +1008,7 @@ text-color: black;
             margin: auto;
             max-width: 100%;
             height:auto;
-            
+            background-color:#FEFFBA;
 
 
         }
@@ -1015,10 +1018,8 @@ text-color: black;
             max-width: 400px;
             font-weight: 400;
             font-size: 1.5rem;
-
-
         }
-
+      
         .style {
             
             display: flex;
@@ -1077,11 +1078,16 @@ text-color: black;
             margin: auto;
             max-width: 300px;
             height: 350px;
-            background-color: white;
+            
         }
 
         #testimonial h1 {
-            font-size: 2.5rem;
+            display:flex;
+            align-items:center;
+            height:300px;
+            font-size: 2rem;
+            margin-left:5%;
+            background-color:white;
         }
 
         .box {
