@@ -805,39 +805,46 @@ text-color: black;
         }
 
         .works {
-      
+            padding:10%;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      margin-left:4%;
+        max-width:90%;
+        height:auto;
+        background-color:black;
+   color:white;
+
+        }
+       
+.works h1
+{
+    font-size:2rem;
+}
+
+      /*  .workcards {
+
 
             margin: auto;
             max-width: 100%;
-
-            height: auto;
-            background-color: black;
-
-        }
-
-        .workcards {
-
-
-            margin: auto;
-            max-width: 80%;
             justify-content: space-between;
             display: flex;
             flex-wrap: wrap;
         }
 
-        .pcard1,
+        /*.pcard1,
         .pcard2,
         .pcard3 {
             flex-basis: calc(33.33% - 20px);
-            height: 500px;
+            height: 700px;
             border: 2px solid black;
             border-radius: 50px;
             margin-right: 40px;
-            /* Add space between the cards */
+            /* Add space between the cards 
             margin-bottom: 20px;
-        }
+        }*/
 
-        .works .pcard1,
+      /*  .works .pcard1,
         .works .pcard2,
         .works .pcard3 {
             background-repeat: no-repeat;
@@ -850,13 +857,13 @@ text-color: black;
 
         }
 
-        .pcardnull {}
+        
 
         .pcard1 {
             flex: 1;
             margin: auto;
             margin-top: 5%;
-            max-width: 280px;
+            max-width: 80px;
             min-width: 280px;
             height: 350px;
             border: 1px solid white;
@@ -991,7 +998,8 @@ text-color: black;
         .packagexplain {
             margin: auto;
             max-width: 100%;
-            height: auto;
+            height:auto;
+            
 
 
         }
@@ -1009,8 +1017,9 @@ text-color: black;
             
             display: flex;
             flex-direction: column;
-            max-width: 700px;
+            max-width: 900px;
             text-align: left;
+            margin:auto;
            
         }
 
@@ -1018,15 +1027,16 @@ text-color: black;
             font-size: 1.5rem;
             text-align: left;
             margin-left:10%;
-            margin-top:10%;
+            
             
         }
 
         .style p {
+            
             text-align: left;
             font-size: 1rem;
             margin-left:10%;
-            margin-top:-1%;
+            margin-top:-4%;
             
         }
 
@@ -1060,16 +1070,17 @@ text-color: black;
            
             margin: auto;
             max-width: 300px;
-            height: 300px;
+            height: 350px;
             background-color: white;
         }
 
         #testimonial h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
 
         .box {
-            
+            max-width:1000px;
+            height:450px;
             margin: auto;
             display: flex;
             flex-wrap: wrap;
@@ -1263,7 +1274,11 @@ text-color: black;
 
         <div class="works">
             <h1>Latest Works</h1>
-            <div class="workcards"></div>
+            <div class="workcards">
+                <img src="https://www.dropbox.com/s/ri6zehd914wdz75/Desktop%20-%202.png?raw=1" style="max-width:300px">
+                <img src="https://www.dropbox.com/s/mp5tak5mpc2tg4b/Mr.Fingaz.png?raw=1"style="max-width:300px">
+                <img src="https://www.dropbox.com/s/k8hnqwf85mniu1l/I%20feel%20you1.png?raw=1" style="max-width:300px">
+            </div>
             <div class="pcardnull"></div>
             <div class="pcard1"></div>
             <div class="pcard2"></div>
