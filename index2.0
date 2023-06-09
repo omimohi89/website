@@ -215,7 +215,9 @@
         }
 
         .landingpage .h1 {
+            font-family:sans-serif;
             max-width: 200px;
+            font-weight:bolder;
         }
 
 
@@ -806,15 +808,19 @@ text-color: black;
 
         .works {
             padding:10%;
+            
       display:flex;
       flex-wrap:wrap;
       justify-content:center;
-      margin-left:4%;
+      
         max-width:90%;
         height:auto;
         background-color:black;
    color:white;
 
+        }
+        .workcards img{
+            margin-bottom:10%;
         }
        
 .works h1
@@ -1080,7 +1086,6 @@ text-color: black;
 
         .box {
             max-width:1000px;
-            height:450px;
             margin: auto;
             display: flex;
             flex-wrap: wrap;
@@ -1275,9 +1280,9 @@ text-color: black;
         <div class="works">
             <h1>Latest Works</h1>
             <div class="workcards">
-                <img src="https://www.dropbox.com/s/ri6zehd914wdz75/Desktop%20-%202.png?raw=1" style="max-width:300px">
-                <img src="https://www.dropbox.com/s/mp5tak5mpc2tg4b/Mr.Fingaz.png?raw=1"style="max-width:300px">
-                <img src="https://www.dropbox.com/s/k8hnqwf85mniu1l/I%20feel%20you1.png?raw=1" style="max-width:300px">
+                <img src="https://www.dropbox.com/s/ri6zehd914wdz75/Desktop%20-%202.png?raw=1" style="max-width:250px">
+                <img src="https://www.dropbox.com/s/mp5tak5mpc2tg4b/Mr.Fingaz.png?raw=1"style="max-width:250px">
+                <img src="https://www.dropbox.com/s/k8hnqwf85mniu1l/I%20feel%20you1.png?raw=1" style="max-width:250px">
             </div>
             <div class="pcardnull"></div>
             <div class="pcard1"></div>
